@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="flex bg-slate-200">
+
+    <!--COL1: sidebar-->
+    <div class="fixed top-0 flex flex-col gap-7 h-full w-12 p-2 items-center bg-white" >
+         
+        <img src="image/Icon.png">
+        
+        <a href="#home">
+            <img src="image/arrow-right.png" style="width: 20px;">
+        </a>
+
+        <a href="#dashboardadmin" class="hover:bg-orange-500">
+            <img src="image/element-3.png" style="width: 20px;">
+        </a>
+
+        <a href="#clipboard">
+            <img src="image/clipboard-text.png" style="width: 20px;">
+        </a>
+
+        <a href="#building">
+            <img src="image/buliding.png" style="width: 20px;">
+        </a>
+
+        <a href="#document">
+            <img src="image/document-text.png" style="width: 20px;">
+        </a>
+
+        <a href="#setting">
+            <img src="image/setting-2.png" style="width: 20px;">
+        </a>
+
+    </div>
+
+    <!--COL2: header & main content-->
+    <div class="flex ml-12 w-full">
+
+        <!--header-->
+        <div class="fixed top-0 left-12 right-0 flex flex-row-reverse gap-1 p-2 items-center bg-white">
+            <a href="#login">
+                <img src="image/account.png" class="grow-0 h-8 w-auto">
+            </a>
+            <div class="grow font-bold">Reservation Schedule</div>
+        </div>
+
+        <!--main content-->
+        <div class="flex flex-col gap-1 mt-12 p-4 w-full h-auto">
+            
+            <!--search date-->
+            <div class="justify-around flex flex-row gap-2 p-2 space-x-4 items-center bg-white w-full">
+                <div class=" text-xs">Wednesday, 30 October 2024</div>
+                <form class="flex flex-row flex-wrap">
+					<div class="flex flex-row items-center border rounded-md border-gray w-48 h-auto  m-1 p-2">
+						<input type="text" placeholder= "select start date" class="text-xs">
+						<img src="image/calendar.png" class="h-4 w-auto">
+					</div>
+					<div class="flex flex-row items-center border rounded-md border-gray w-48 h-auto  m-1 p-2">
+						<input type="text" placeholder= "select end date" class="text-xs">
+						<img src="image/calendar.png" class="h-4 w-auto">
+					</div>
+					<button class="w-20 h-auto m-1 p-2 rounded-md border border-orange-600 text-xs text-orange-600">search</button>
+				</form>
+                <div class="w-40">
+					<button class="w-35 h-auto m-1 p-2 rounded-md border bg-orange-600 text-xs text-white whitespace-nowrap">+Add New Reservation</button>
+				</div>
+            </div>
+
+            <!--reservation Schedule-->
+			<div class="flex flex-row gap-2 bg-white p-2">
+
+				<!--time-->
+				<div class="flex flex-col gap-5 mt-8 text-xs">
+                    <div>08.00</div>
+                    <div>09.00</div>
+                    <div>10.00</div>
+                    <div>11.00</div>
+                    <div>12.00</div>
+                    <div>13.00</div>
+                    <div>14.00</div>
+                    <div>15.00</div>
+                    <div>16.00</div>
+                </div>
+
+				<!--table-->
+				<div class="grid grid-cols-3 grid-rows-11 border border-gray w-full grid-flow-col ">
+                    <div class="flex justify-center items-center " style="grid-area: 1 / 1 / 2 / 2">Aster Room</div>
+                    <div class="flex justify-center items-center " style="grid-area: 1 / 2 / 2 / 3">Blubell Room</div>
+                    <div class="flex justify-center items-center " style="grid-area: 1 / 3 / 2 / 4">Camellia Room</div>
+                </div>
+
+			</div>
+
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
