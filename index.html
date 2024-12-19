@@ -17,30 +17,30 @@
             <img src="image/arrow-right.png" style="width: 20px;">
         </a>
 
-        <a href="#dashboardadmin" class="hover:bg-orange-500">
-            <img src="image/element-3.png" style="width: 20px;">
+        <a href="#dashboardadmin" >
+            <img src="image/element-3.png" class="hover:bg-orange-200" style="width: 20px;" >
         </a>
 
-        <a href="#clipboard">
-            <img src="image/clipboard-text.png" style="width: 20px;">
+        <a href="#clipboard" >
+            <img src="image/clipboard-text.png" class="hover:bg-orange-200" style="width: 20px;">
         </a>
 
-        <a href="#building">
-            <img src="image/buliding.png" style="width: 20px;">
+        <a href="#building" >
+            <img src="image/buliding.png" class="hover:bg-orange-200" style="width: 20px;">
         </a>
 
-        <a href="#document">
-            <img src="image/document-text.png" style="width: 20px;">
+        <a href="#document" >
+            <img src="image/document-text.png" class="hover:bg-orange-200" style="width: 20px;"">
         </a>
 
-        <a href="#setting">
-            <img src="image/setting-2.png" style="width: 20px;">
+        <a href="#setting" >
+            <img src="image/setting-2.png" class="hover:bg-orange-200" style="width: 20px;">
         </a>
 
     </div>
 
     <!--COL2: header & main content-->
-    <div class="flex ml-12 w-full">
+    <div class="flex ml-12 w-[calc(100%-50px)]">
 
         <!--header-->
         <div class="fixed top-0 left-12 right-0 flex flex-row-reverse gap-1 p-2 items-center bg-white">
@@ -51,7 +51,7 @@
         </div>
 
         <!--main content-->
-        <div class="flex flex-col gap-1 mt-12 p-4 w-full h-auto">
+        <div class="flex flex-col gap-1 mt-12 p-4 w-full h-full">
             
             <!--search date-->
             <div class="justify-around flex flex-row gap-2 p-2 space-x-4 items-center bg-white w-full">
@@ -72,11 +72,11 @@
 				</div>
             </div>
 
-            <!--reservation Schedule-->
-			<div class="flex flex-row gap-2 bg-white p-2">
+            <!--reservation schedule-->
+			<div class="flex flex-row gap-2 bg-white p-2 overflow-auto h-full">
 
 				<!--time-->
-				<div class="flex flex-col gap-5 mt-8 text-xs">
+				<div class="flex flex-col justify-around text-xs mt-28 mb-10">              
                     <div>08.00</div>
                     <div>09.00</div>
                     <div>10.00</div>
@@ -85,14 +85,45 @@
                     <div>13.00</div>
                     <div>14.00</div>
                     <div>15.00</div>
-                    <div>16.00</div>
+                    <div>16.00</div> 
                 </div>
 
 				<!--table-->
-				<div class="grid grid-cols-3 grid-rows-11 border border-gray w-full grid-flow-col ">
-                    <div class="flex justify-center items-center " style="grid-area: 1 / 1 / 2 / 2">Aster Room</div>
-                    <div class="flex justify-center items-center " style="grid-area: 1 / 2 / 2 / 3">Blubell Room</div>
-                    <div class="flex justify-center items-center " style="grid-area: 1 / 3 / 2 / 4">Camellia Room</div>
+				<div class="grid grid-cols-[250px_250px_250px_250px_250px] grid-rows-11 border border-gray ">
+                    <div class="flex justify-center items-center border border-gray " style="grid-area: 1 / 1 / 2 / 2">Aster Room</div>
+                    <div class="flex justify-center items-center border border-gray" style="grid-area: 1 / 2 / 2 / 3">Blubell Room</div>
+                    <div class="flex justify-center items-center border border-gray" style="grid-area: 1 / 3 / 2 / 4">Camellia Room</div>
+                    <div class="flex justify-center items-center border border-gray" style="grid-area: 1 / 4 / 2 / 5">X Room</div>
+                    <div class="flex justify-center items-center border border-gray" style="grid-area: 1 / 5 / 2 / 6">Y Room</div>
+                    <div class="flex flex-col gap-1 border rounded-md bg-gray-100 p-2" style="grid-area: 3 / 1 / 4 / 2">
+                        <div class="font-bold text-sm ">PT Maju Jaya</div>
+                        <div class="flex flex-row justify-between items-center">
+                            <div class="text-xs">08.00-09.00 WIB</div>
+                            <div class="flex p-1 whitespace-nowrap h-auto rounded-lg border border-gray-500 text-xs text-gray-500 justify-around">Done</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 border rounded-md bg-orange-100 p-2" style="grid-area: 5/ 2 / 6 / 3">
+                        <div class="font-bold text-sm ">PT XYZ Corp</div>
+                        <div class="flex flex-row justify-between items-center">
+                            <div class="text-xs">10.00-11.00 WIB</div>
+                            <div class="flex p-1 whitespace-nowrap h-auto rounded-lg border border-green-500 text-xs text-green-500 justify-around">In Progress</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 border rounded-md bg-orange-100 p-2" style="grid-area: 8 / 1 / 10 / 2">
+                        <div class="font-bold text-sm ">Organisasi Muslim Pusat</div>
+                        <div class="flex flex-row grow justify-between items-center">
+                            <div class="self-start text-xs">13.00-15.00 WIB</div>
+                            <div class="self-end flex p-1 whitespace-nowrap h-auto rounded-lg border border-orange-500 text-xs text-orange-500 justify-around">Up Coming</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 border rounded-md bg-orange-100 p-2" style="grid-area: 9 / 3 / 10 / 4">
+                        <div class="font-bold text-sm ">Alisa Company</div>
+                        <div class="flex flex-row justify-between items-center">
+                            <div class="text-xs">14.00-15.00 WIB</div>
+                            <div class="flex p-1 whitespace-nowrap h-auto rounded-lg border border-orange-500 text-xs text-orange-500 justify-around">Up Coming</div>
+                        </div>
+                    </div>
+
                 </div>
 
 			</div>
